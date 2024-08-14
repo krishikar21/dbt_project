@@ -1,6 +1,13 @@
 version: 2
 
 models:
+  - name: hospital_admissions
+    description: "Table containing hospital admissions data"
+    columns:
+      - name: subject_id
+        description: "The primary key for this table is subject_id"
+        tests:
+          - not_null
   - name: new_table_query
     description: "A dbt model combinig icu_stays and hospital admissions"
     columns:
